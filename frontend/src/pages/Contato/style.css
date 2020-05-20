@@ -1,0 +1,85 @@
+.contato-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100%;
+    margin: 60px auto;
+
+
+
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.section-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 65px;
+    grid-gap: 45px;
+}
+
+.info-contato ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.info-contato ul li {
+    margin-top: 10px;
+    display: flex;
+}
+
+/* Cor button */
+
+.contato-container .button {
+    font-size: 18px;
+    background: #2AC7E3;
+    padding: 15px 105px;
+    border-radius: 8px;
+    border: 0;
+    color: #2F2D49;
+    transition: 0.3s;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.button-secondary {
+    font-size: 18px;
+    background: #6161E1;
+    padding: 15px 105px;
+    border-radius: 8px;
+    border: 0;
+    color: #fff;
+    transition: 0.3s;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.button:hover {
+    background: #3D3D63;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .section-contato {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 65px 10px;
+        grid-gap: 45px;
+    }
+}

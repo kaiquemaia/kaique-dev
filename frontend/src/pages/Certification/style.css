@@ -1,0 +1,86 @@
+.certification-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100%;
+    margin: 60px auto;
+
+
+
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-instituicao {
+    background: #2A2A45;
+    padding: 23px;
+    border-radius: 13px;
+}
+
+.card-instituicao p {
+    color: #6E6B94;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+.card-instituicao h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.instituicao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 65px;
+    grid-gap: 45px;
+}
+
+.card-instituicao ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.card-instituicao ul li span {
+    position: absolute;
+    left: 100px;
+}
+
+/* Animation elements */
+
+.certification-container h2 {
+    animation-name: fade;
+    animation-duration: 1.2s;
+
+}
+.instituicao-container{
+    animation-name: fade;
+    animation-duration: 1.2s;
+    animation-delay: 0.4;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .instituicao {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 65px 10px;
+        grid-gap: 45px;
+    }
+}
